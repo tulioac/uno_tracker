@@ -8,6 +8,10 @@
   --carta-amarela: #FFAA00;
   --carta-vermelha: #FF5555;
   --carta-azul: #5555FF;
+  font-size: 30px;
+  color: var(--escuro);
+  font-family: 'CircularStd';
+  font-weight: 300;
 }
 
 @font-face {
@@ -57,4 +61,25 @@ img#logo {
 
 .cards {
   display: flex;
+}
+
+h1 { 
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 0.9rem;
+}
+
+h3 {
+  font-size: 0.8rem;
+}
+
+h4 {
+  font-size: 0.6rem;
+}
+
+h5 {
+  font-size: 0.5rem;
 }
