@@ -3,3 +3,30 @@
   height: 600px;
   padding: 30px 20px;
 }
+
+.espacado {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addCard #cores {
+  width: 275px;
+}
+
+.addCard img:hover {
+  box-shadow: var(--selecionado);
+}
+
+.addCard #jogadores {
+  width: 90%;
+}
+
+.addCard #jogadores img {
+  width: 60px;
+  height: 60px;
+}
+
+
+.circular {
+  border-radius: 50%;
+}
