@@ -11,8 +11,10 @@ const App = () => (
   <div id="game">
     <img src={Logosvg} id="logo"></img>
     <Winner />
-    <AddCard />
-    <Stats />
+    <div className="cards">
+      <AddCard />
+      <Stats />
+    </div>
   </div>
 );
 

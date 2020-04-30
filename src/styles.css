@@ -1,3 +1,36 @@
+:root {
+  --borda: #DBE9F5;
+  --escuro: #172B3E ;
+  --primario: #0088FF ;
+  --primario-claro: #AACBE7 ;
+  --primario-escuro: #2369A6 ;
+  --carta-verde: #55AA55;
+  --carta-amarela: #FFAA00;
+  --carta-vermelha: #FF5555;
+  --carta-azul: #5555FF;
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  src: local('CircularStd'), url(./fonts/CircularStd-Black.ttf) format('truetype');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'CircularStd';
+  src: local('CircularStd'), url(./fonts/CircularStd-Bold.ttf) format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'CircularStd';
+  src: local('CircularStd'), url(./fonts/CircularStd-Medium.ttf) format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'CircularStd';
+  src: local('CircularStd'), url(./fonts/CircularStd-Book.ttf) format('truetype');
+  font-weight: 300;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -20,4 +53,8 @@ img#logo {
   box-sizing: border-box;
   box-shadow: 0px 4px 6px rgba(31, 70, 88, 0.04);
   border-radius: 20px;
+}
+
+.cards {
+  display: flex;
 }
