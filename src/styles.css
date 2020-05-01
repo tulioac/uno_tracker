@@ -53,22 +53,6 @@ img#logo {
   width: 172px;
 }
 
-.card {
-  background: #FFFFFF;
-  border: 1px solid #DBE9F5;
-  box-sizing: border-box;
-  box-shadow: var(--sombra);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.cards {
-  display: flex;
-}
-
 h1 { 
   font-size: 1rem;
   font-weight: 500;
@@ -88,4 +72,35 @@ h4 {
 
 h5 {
   font-size: 0.5rem;
+}
+
+.card {
+  background: #FFFFFF;
+  border: 1px solid #DBE9F5;
+  box-sizing: border-box;
+  box-shadow: var(--sombra);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards {
+  display: flex;
+}
+
+.preenchido {
+  background-color: var(--escuro);
+  border: none;
+  border-radius: 20px;
+  padding: 15px 32px;
+  cursor: pointer;
+  color: white;
+  font-family: 'CircularStd';
+  font-size: 0.8rem;
+}
+
+.preenchido:hover {
+  box-shadow: var(--selecionado);
 }

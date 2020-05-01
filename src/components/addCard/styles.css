@@ -11,6 +11,7 @@
 
 .addCard #cores {
   width: 275px;
+  cursor: pointer;
 }
 
 .addCard img:hover {
@@ -19,6 +20,7 @@
 
 .addCard #jogadores {
   width: 90%;
+  cursor: pointer;
 }
 
 .addCard #jogadores img {
@@ -26,6 +28,19 @@
   height: 60px;
 }
 
+.addCard #selectCard {
+   display: flex;
+   width: 65%;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.addCard .carta {
+  padding: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
 .circular {
   border-radius: 50%;
