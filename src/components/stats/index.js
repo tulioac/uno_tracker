@@ -3,6 +3,11 @@ import './styles.css';
 
 import PlayerStats from '../playerStats';
 
+import andre from '../../img/players/andre.jfif';
+import daniel from '../../img/players/daniel.jfif';
+import dumbo from '../../img/players/dumbo.jfif';
+import sara from '../../img/players/sara.jfif';
+
 export default class Stats extends Component {
   render() {
     return (
@@ -16,10 +21,10 @@ export default class Stats extends Component {
           </h1>
         </div>
         <div className="body">
-          <PlayerStats image={"Imagem"} name={"Cláudio"} wins={"35"} />
-          <PlayerStats image={"Imagem"} name={"Júnior"} wins={"12"} />
-          <PlayerStats image={"Imagem"} name={"Claudete"} wins={"50"} />
-          <PlayerStats image={"Imagem"} name={"Jarbas"} wins={"5"} />
+          <PlayerStats image={andre} name={"André"} wins={"19"} />
+          <PlayerStats image={daniel} name={"Daniel"} wins={"11"} />
+          <PlayerStats image={dumbo} name={"Dumbo"} wins={"31"} />
+          <PlayerStats image={sara} name={"Sara"} wins={"25"} />
         </div>
       </div>
     );

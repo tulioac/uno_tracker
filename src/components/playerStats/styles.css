@@ -4,4 +4,10 @@
   border-top: 1px solid var(--borda);
   justify-content: space-around;
   align-items: center;
+  padding: 25px 0;
+}
+
+.playerStats img {
+  width: 70px;
+  height: 70px;
 }
