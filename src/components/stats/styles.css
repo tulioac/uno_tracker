@@ -1,6 +1,6 @@
 .stats {
   width: 1000px;
-  display: flex;
+  display: block;
   justify-content: start;
 }
 
@@ -8,5 +8,8 @@
   padding: 30px 0px;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  min-width: 100%;
+}
+
+.stats .body {
 }

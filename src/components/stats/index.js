@@ -14,10 +14,12 @@ export default class Stats extends Component {
           <h1>
             Cartas Ausentes
           </h1>
-          <div className="body">
-            <PlayerStats image={"Imagem"} name={"nome"} wins={"50"} />
-
-          </div>
+        </div>
+        <div className="body">
+          <PlayerStats image={"Imagem"} name={"Cláudio"} wins={"35"} />
+          <PlayerStats image={"Imagem"} name={"Júnior"} wins={"12"} />
+          <PlayerStats image={"Imagem"} name={"Claudete"} wins={"50"} />
+          <PlayerStats image={"Imagem"} name={"Jarbas"} wins={"5"} />
         </div>
       </div>
     );
