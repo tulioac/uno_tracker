@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './styles.css';
 
+import PlayerStats from '../playerStats';
+
 export default class Stats extends Component {
   render() {
     return (
@@ -13,17 +15,8 @@ export default class Stats extends Component {
             Cartas Ausentes
           </h1>
           <div className="body">
-            <div className="playerStats">
-              {/* TODO: Criar um componente para playerStats */}
-              Foto
-              <div className="playerInfo">
-                <p className="playerName">Nome</p>
-                <p className="playerWins">
-                  <span className="primario">50</span> vitórias
-                </p>
-              </div>
-              <div className="playerCards">Cartas</div>
-            </div>
+            <PlayerStats image={"Imagem"} name={"nome"} wins={"50"} />
+
           </div>
         </div>
       </div>

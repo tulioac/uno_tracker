@@ -10,7 +10,3 @@
   justify-content: space-around;
   width: 100%;
 }
-
-.stats .playerStats {
-  border-top: 1px solid var(--borda);
-}
