@@ -1,5 +1,5 @@
 .addCard {
-  width: 400px;
+  min-width: 400px;
   height: 600px;
   padding: 30px 20px;
 }

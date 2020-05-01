@@ -1,2 +1,16 @@
 .stats {
+  width: 1000px;
+  display: flex;
+  justify-content: start;
+}
+
+.stats .title {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.stats .playerStats {
+  border-top: 1px solid var(--borda);
 }

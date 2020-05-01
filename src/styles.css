@@ -104,3 +104,7 @@ h5 {
 .preenchido:hover {
   box-shadow: var(--selecionado);
 }
+
+.primario {
+  color: var(--primario);
+}
