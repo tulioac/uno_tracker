@@ -5,11 +5,9 @@
 }
 
 .stats .title {
-  padding: 30px 0px;
-  display: flex;
+  padding: 30px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-around;
   min-width: 100%;
-}
-
-.stats .body {
 }
