@@ -1,13 +1,22 @@
 .playerStats {
-  display: flex;
   width: 100%;
   border-top: 1px solid var(--borda);
+  padding: 25px 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  align-items: center;
+  /* 
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 25px 0;
+  */
 }
 
 .playerStats img {
   width: 70px;
   height: 70px;
+}
+
+.playerStats .playerWins {
+  font-size: 0.8rem;
 }
