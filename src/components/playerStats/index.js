@@ -19,9 +19,9 @@ export default class PlayerStats extends Component {
             </p>
         </div>
         <div className="playerCards">
-          <img src={carta} className="carta"></img>
-          <img src={carta} className="carta"></img>
-          <img src={carta} className="carta"></img>
+          <img src={carta} className="carta" alt="Carta"></img>
+          <img src={carta} className="carta" alt="Carta"></img>
+          <img src={carta} className="carta" alt="Carta"></img>
         </div>
       </div>
     );

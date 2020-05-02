@@ -93,12 +93,14 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin: 10px 5px;
 }
 
 .cards {
   display: flex;
   justify-content: space-evenly;
   margin: 20px 0px;
+  flex-wrap: wrap;
 }
 
 .preenchido {
