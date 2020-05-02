@@ -51,6 +51,7 @@ body {
 
 img#logo {
   width: 172px;
+  position: absolute;
 }
 
 h1 { 
@@ -88,6 +89,8 @@ h5 {
 
 .cards {
   display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0px;
 }
 
 .preenchido {
