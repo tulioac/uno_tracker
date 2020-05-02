@@ -7,11 +7,6 @@
   align-items: center;
 }
 
-.playerStats img.playerPhoto {
-  width: 70px;
-  height: 70px;
-}
-
 .playerStats .playerWins {
   font-size: 0.8rem;
 }

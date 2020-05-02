@@ -47,11 +47,19 @@
 
 body {
   background: #fafafa;
+  align-items: center;
 }
 
 img#logo {
-  width: 172px;
+  width: 125px;
   position: absolute;
+  top: 0;
+  margin: 5px;
+}
+
+img.playerPhoto {
+  width: 70px;
+  height: 70px;
 }
 
 h1 { 

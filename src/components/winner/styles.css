@@ -1,0 +1,6 @@
+#winner {
+  margin: 25px auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
