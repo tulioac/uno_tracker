@@ -7,11 +7,16 @@
   align-items: center;
 }
 
-.playerStats img {
+.playerStats img.playerPhoto {
   width: 70px;
   height: 70px;
 }
 
 .playerStats .playerWins {
   font-size: 0.8rem;
+}
+
+.playerStats .playerCards > img {
+  margin: 0px 10px;
+  cursor: default;
 }

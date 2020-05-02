@@ -108,3 +108,13 @@ h5 {
 .primario {
   color: var(--primario);
 }
+
+.carta {
+  padding: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.carta:hover {
+  box-shadow: var(--selecionado);
+}

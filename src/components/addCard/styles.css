@@ -36,12 +36,6 @@
    justify-content: space-evenly;
 }
 
-.addCard .carta {
-  padding: 2px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
 .circular {
   border-radius: 50%;
 }
