@@ -1,22 +1,18 @@
 [
   {
     "name": "Dumbo",
-    "wins": 31,
-    "image": "../img/dumbo.jfif"
+    "wins": 31
   },
   {
     "name": "Sara",
-    "wins": 25,
-    "image": "../img/sara.jfif"
+    "wins": 25
   },
   {
     "name": "André",
-    "wins": 19,
-    "image": "../img/andre.jfif"
+    "wins": 19
   },
   {
     "name": "Daniel",
-    "wins": 11,
-    "image": "../img/daniel.jfif"
+    "wins": 11
   }
 ]

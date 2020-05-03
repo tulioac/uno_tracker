@@ -6,6 +6,8 @@ import Winner from '../winner';
 import AddCard from '../addCard';
 import Stats from '../stats';
 
+import players from '../../data/data.json';
+
 export default class Controller extends Component {
   render() {
     return (
@@ -13,8 +15,8 @@ export default class Controller extends Component {
         <img src={Logosvg} id="logo" alt="Logo"></img>
         <Winner />
         <div className="cards">
-          <AddCard />
-          <Stats />
+          <AddCard players={players} />
+          <Stats players={players} />
         </div>
       </div>
     );
