@@ -15,6 +15,8 @@ export default class Controller extends Component {
     console.log(cardInfo);
   }
 
+  // TODO: Passar via props cardInfo para Stats adicionar no Jogador
+
   render() {
     return (
       <div id="game">
