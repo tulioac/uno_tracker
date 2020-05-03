@@ -30,11 +30,11 @@ export default class AddCard extends Component {
   }
 
   addCardToPlayer = () => {
-    console.log(this.state);
-    // Enviar dados e depois resetar seleções
+    this.props.addCardToPlayer(this.state);
+    this.reset();
+  }
 
-
-
+  reset = () => {
     this.setState({
       player: "",
       color: "",
