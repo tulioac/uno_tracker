@@ -17,8 +17,11 @@ export default class Controller extends Component {
   }
 
   addCardToPlayer = (cardInfo) => {
-    console.log("Pai");
-    console.log(cardInfo);
+    const { player, card, color } = cardInfo;
+
+    this.setState({
+      [player]: [{ card, color }, ...this.state[player]]
+    })
   }
 
   // TODO: Passar via props cardInfo para Stats adicionar no Jogador
