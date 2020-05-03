@@ -15,7 +15,7 @@
 }
 
 .addCard img:hover {
-  box-shadow: var(--selecionado);
+  box-shadow: var(--hover);
 }
 
 .addCard #jogadores {

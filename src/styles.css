@@ -12,8 +12,9 @@
   color: var(--escuro);
   font-family: 'CircularStd';
   font-weight: 300;
-  --selecionado: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --sombra: 0px 4px 6px rgba(31, 70, 88, 0.04);
+  --hover: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --sombra: 0px 4px 6px rgba(31, 70, 88, 0.199);
+  --selecionado: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 @font-face {
@@ -115,7 +116,7 @@ h5 {
 }
 
 .preenchido:hover {
-  box-shadow: var(--selecionado);
+  box-shadow: var(--hover);
 }
 
 .primario {
@@ -129,5 +130,10 @@ h5 {
 }
 
 .carta:hover {
+  box-shadow: var(--hover);
+}
+
+.selecionado {
+  filter: brightness(1.2);
   box-shadow: var(--selecionado);
 }
