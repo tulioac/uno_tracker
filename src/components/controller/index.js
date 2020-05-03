@@ -9,6 +9,12 @@ import Stats from '../stats';
 import players from '../../data/data.json';
 
 export default class Controller extends Component {
+  state = {
+    "andre": [],
+    "daniel": [],
+    "dumbo": [],
+    "sara": []
+  }
 
   addCardToPlayer = (cardInfo) => {
     console.log("Pai");
@@ -24,7 +30,7 @@ export default class Controller extends Component {
         <Winner />
         <div className="cards">
           <AddCard players={players} addCardToPlayer={this.addCardToPlayer.bind(this)} />
-          <Stats players={players} />
+          <Stats players={players} passCardtoPlayer={this.passCardtoPlayer} />
         </div>
       </div>
     );

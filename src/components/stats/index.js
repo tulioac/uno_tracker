@@ -9,6 +9,11 @@ import dumbo from '../../img/players/dumbo.jfif';
 import sara from '../../img/players/sara.jfif';
 
 export default class Stats extends Component {
+
+  passCardToPlayerer = (cardInfo) => {
+    console.log(cardInfo);
+  }
+
   render() {
     return (
       <div className="card stats">

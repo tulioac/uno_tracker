@@ -137,3 +137,19 @@ h5 {
   filter: brightness(1.2);
   box-shadow: var(--selecionado);
 }
+
+.amarelo {
+  fill: var(--carta-amarela);
+}
+
+.azul {
+  fill: var(--carta-azul);
+}
+
+.verde {
+  fill: var(--carta-verde);
+}
+
+.vermelho {
+  fill: var(--carta-vermelha);
+}

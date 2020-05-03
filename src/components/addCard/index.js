@@ -8,7 +8,7 @@ import green from '../../svg/colors/green.svg';
 
 import { andre, daniel, dumbo, sara } from '../fotos';
 
-import { zero, one, two, three, four, five, six, seven, eight, nine, plus, reverse, skip } from '../cartas';
+import { zero, one, two, three, four, five, six, seven, eight, nine, plus, reverse, skip } from '../cartas/semCor';
 
 export default class AddCard extends Component {
   state = {
@@ -71,7 +71,7 @@ export default class AddCard extends Component {
           <img src={nine} alt="Nove" className={`carta ${this.state.card === "nine" ? "selecionado" : ""}`} onClick={() => this.selectCard("nine")}></img>
           <img src={plus} alt="Plus" className={`carta ${this.state.card === "plus" ? "selecionado" : ""}`} onClick={() => this.selectCard("plus")}></img>
           <img src={reverse} alt="Reverse" className={`carta ${this.state.card === "reverse" ? "selecionado" : ""}`} onClick={() => this.selectCard("reverse")}></img>
-          <img src={skip} alt="Skip" className={`carta ${this.state.card === "skip" ? "selecionado" : ""}`} onClick={() => this.selectCard("skip")}></img>
+          <img src={skip} alt="Skip" className={`carta  vermelho ${this.state.card === "skip" ? "selecionado" : ""}`} onClick={() => this.selectCard("skip")}></img>
         </div>
         <button className="preenchido" onClick={this.addCardToPlayer}>Adicionar</button>
       </div>
