@@ -41,7 +41,7 @@ export default class AddCard extends Component {
       card: ""
     })
   }
-
+  // Trocar renderização das cartas para CardSvg
   render() {
     return (
       <div className="card addCard">
