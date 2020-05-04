@@ -11,6 +11,10 @@
   font-size: 0.8rem;
 }
 
+.playerStats .playerCards {
+  display: flex;
+}
+
 .playerStats .playerCards > img {
   margin: 0px 10px;
   cursor: default;

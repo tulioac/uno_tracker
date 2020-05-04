@@ -29,8 +29,14 @@ export default class AddCard extends Component {
     this.setState({ card });
   }
 
+  validateSelection = () => {
+    return (this.state.player !== "" && this.state.color !== "" && this.state.card !== "");
+  }
+
   addCardToPlayer = () => {
-    this.props.addCardToPlayer(this.state);
+    if (this.validateSelection()) {
+      this.props.addCardToPlayer(this.state);
+    }
     this.reset();
   }
 
