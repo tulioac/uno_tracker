@@ -28,9 +28,3 @@ export default class PlayerStats extends Component {
     );
   }
 }
-
-/*
-{this.props.cards.map(card => (
-            <CardSvg key="oi" cardType={card.carta} color={card.cor} key={`${card.carta} ${card.cor}`} />
-          ))}
-*/
