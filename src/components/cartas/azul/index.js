@@ -12,4 +12,20 @@ import plus from '../../../svg/blue/plus.svg';
 import reverse from '../../../svg/blue/reverse.svg';
 import skip from '../../../svg/blue/skip.svg';
 
-export { zero, one, two, three, four, five, six, seven, eight, nine, plus, reverse, skip };
+const azul = {
+  zero,
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  seven,
+  eight,
+  nine,
+  plus,
+  reverse,
+  skip
+}
+
+export default azul;

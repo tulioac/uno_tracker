@@ -12,4 +12,20 @@ import plus from '../../../svg/red/plus.svg';
 import reverse from '../../../svg/red/reverse.svg';
 import skip from '../../../svg/red/skip.svg';
 
-export { zero, one, two, three, four, five, six, seven, eight, nine, plus, reverse, skip };
+const vermelha = {
+  zero,
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  seven,
+  eight,
+  nine,
+  plus,
+  reverse,
+  skip
+}
+
+export default vermelha;

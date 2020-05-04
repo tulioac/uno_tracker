@@ -12,4 +12,20 @@ import plus from '../../../svg/yellow/plus.svg';
 import reverse from '../../../svg/yellow/reverse.svg';
 import skip from '../../../svg/yellow/skip.svg';
 
-export { zero, one, two, three, four, five, six, seven, eight, nine, plus, reverse, skip };
+const amarela = {
+  zero,
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  seven,
+  eight,
+  nine,
+  plus,
+  reverse,
+  skip
+}
+
+export default amarela;

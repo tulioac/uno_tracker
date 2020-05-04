@@ -12,4 +12,20 @@ import plus from '../../../svg/green/plus.svg';
 import reverse from '../../../svg/green/reverse.svg';
 import skip from '../../../svg/green/skip.svg';
 
-export { zero, one, two, three, four, five, six, seven, eight, nine, plus, reverse, skip };
+const verde = {
+  zero,
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  seven,
+  eight,
+  nine,
+  plus,
+  reverse,
+  skip
+}
+
+export default verde;

@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-import carta from '../../svg/uncolored/0.svg';
+import CardSvg from '../cardSvg';
 
 export default class PlayerStats extends Component {
-  state = {
-    cards: []
+
+  showCards = () => {
+    console.log(this.props.cards);
   }
 
   render() {
     return (
       <div className="playerStats">
-        <img src={this.props.image} alt="Jogador" className="circular playerPhoto"></img>
+        <img src={this.props.image} alt="Jogador" className="circular playerPhoto" onClick={this.showCards}></img>
         <div className="playerInfo">
           <p className="playerName">{this.props.name}</p>
           <p className="playerWins">
@@ -19,11 +20,17 @@ export default class PlayerStats extends Component {
             </p>
         </div>
         <div className="playerCards">
-          <img src={carta} className="carta" alt="Carta"></img>
-          <img src={carta} className="carta" alt="Carta"></img>
-          <img src={carta} className="carta" alt="Carta"></img>
+          {this.props.cards.map((carta, i) => (
+            <CardSvg key={i} cardType={carta.card} color={carta.color} />
+          ))}
         </div>
-      </div>
+      </div >
     );
   }
 }
+
+/*
+{this.props.cards.map(card => (
+            <CardSvg key="oi" cardType={card.carta} color={card.cor} key={`${card.carta} ${card.cor}`} />
+          ))}
+*/

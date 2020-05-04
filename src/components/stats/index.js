@@ -9,11 +9,6 @@ import dumbo from '../../img/players/dumbo.jfif';
 import sara from '../../img/players/sara.jfif';
 
 export default class Stats extends Component {
-
-  passCardToPlayerer = (cardInfo) => {
-    console.log(cardInfo);
-  }
-
   render() {
     return (
       <div className="card stats">
@@ -26,10 +21,10 @@ export default class Stats extends Component {
           </h1>
         </div>
         <div className="body">
-          <PlayerStats image={andre} name={"André"} wins={"19"} />
-          <PlayerStats image={daniel} name={"Daniel"} wins={"11"} />
-          <PlayerStats image={dumbo} name={"Dumbo"} wins={"31"} />
-          <PlayerStats image={sara} name={"Sara"} wins={"25"} />
+          <PlayerStats image={andre} name={"André"} wins={"19"} cards={this.props.playersCards.andre} />
+          <PlayerStats image={daniel} name={"Daniel"} wins={"11"} cards={this.props.playersCards.daniel} />
+          <PlayerStats image={dumbo} name={"Dumbo"} wins={"31"} cards={this.props.playersCards.dumbo} />
+          <PlayerStats image={sara} name={"Sara"} wins={"25"} cards={this.props.playersCards.sara} />
         </div>
       </div>
     );

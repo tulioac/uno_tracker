@@ -33,7 +33,7 @@ export default class Controller extends Component {
         <Winner />
         <div className="cards">
           <AddCard players={players} addCardToPlayer={this.addCardToPlayer.bind(this)} />
-          <Stats players={players} passCardtoPlayer={this.passCardtoPlayer} />
+          <Stats players={players} playersCards={this.state} />
         </div>
       </div>
     );
