@@ -13,7 +13,8 @@ export default class Controller extends Component {
     "andre": [],
     "daniel": [],
     "dumbo": [],
-    "sara": []
+    "sara": [],
+    "malu": [],
   }
 
   addCardToPlayer = (cardInfo) => {
