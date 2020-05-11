@@ -12,4 +12,20 @@ import plus from '../../../svg/uncolored/plus.svg';
 import reverse from '../../../svg/uncolored/reverse.svg';
 import skip from '../../../svg/uncolored/skip.svg';
 
-export { zero, one, two, three, four, five, six, seven, eight, nine, plus, reverse, skip };
+const semCor = {
+  zero,
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  seven,
+  eight,
+  nine,
+  plus,
+  reverse,
+  skip
+}
+
+export default semCor;

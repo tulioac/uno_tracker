@@ -3,11 +3,7 @@ import './styles.css';
 
 import PlayerStats from '../playerStats';
 
-import andre from '../../img/players/andre.jfif';
-import daniel from '../../img/players/daniel.jfif';
-import dumbo from '../../img/players/dumbo.jfif';
-import sara from '../../img/players/sara.jfif';
-import malu from '../../img/players/malu.jfif';
+import fotos from '../fotos';
 
 export default class Stats extends Component {
   render() {
@@ -22,11 +18,11 @@ export default class Stats extends Component {
           </h1>
         </div>
         <div className="body">
-          <PlayerStats image={dumbo} name={"Dumbo"} wins={"38"} cards={this.props.playersCards.dumbo} />
-          <PlayerStats image={sara} name={"Sara"} wins={"36"} cards={this.props.playersCards.sara} />
-          <PlayerStats image={andre} name={"André"} wins={"22"} cards={this.props.playersCards.andre} />
-          <PlayerStats image={daniel} name={"Daniel"} wins={"21"} cards={this.props.playersCards.daniel} />
-          <PlayerStats image={malu} name={"Malu"} wins={"4"} cards={this.props.playersCards.malu} />
+          <PlayerStats image={fotos.dumbo} name={"Dumbo"} wins={"38"} cards={this.props.playersCards.dumbo} />
+          <PlayerStats image={fotos.sara} name={"Sara"} wins={"36"} cards={this.props.playersCards.sara} />
+          <PlayerStats image={fotos.andre} name={"André"} wins={"22"} cards={this.props.playersCards.andre} />
+          <PlayerStats image={fotos.daniel} name={"Daniel"} wins={"21"} cards={this.props.playersCards.daniel} />
+          <PlayerStats image={fotos.malu} name={"Malu"} wins={"4"} cards={this.props.playersCards.malu} />
         </div>
       </div>
     );

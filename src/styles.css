@@ -153,3 +153,24 @@ h5 {
 .vermelho {
   fill: var(--carta-vermelha);
 }
+
+::-webkit-scrollbar {
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 15px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primario-escuro);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--escuro); 
+}
