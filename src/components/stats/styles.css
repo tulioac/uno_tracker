@@ -1,5 +1,5 @@
 .stats {
-  min-width: 700px;
+  width: minmax(700px, 100%);
   width: 60%;
   display: block;
 }
@@ -7,7 +7,7 @@
 .stats .title {
   padding: 30px 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 100px auto;
   justify-content: space-around;
   min-width: 100%;
 }
