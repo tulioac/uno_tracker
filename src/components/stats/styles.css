@@ -1,5 +1,5 @@
 .stats {
-  min-width: 700px;
+  width: minmax(700px, 100%);
   width: 60%;
   display: block;
 }
