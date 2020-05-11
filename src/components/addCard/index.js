@@ -15,14 +15,17 @@ export default class AddCard extends Component {
   }
 
   selectPlayer = (player) => {
+    console.log(this.state);
     this.setState({ player });
   }
 
   selectColor = (color) => {
+    console.log(this.state);
     this.setState({ color });
   }
 
   selectCard = (card) => {
+    console.log(this.state);
     this.setState({ card });
   }
 
@@ -49,8 +52,12 @@ export default class AddCard extends Component {
 
     console.log(this.props.players);
 
-    let playerPictures = this.props.players.map(({ name }) => (
+    const playerPictures = this.props.players.map(({ name }) => (
       <img key={name} src={fotos[name]} alt={name} className={`circular ${this.state.player === name ? "selecionado" : ""}`} onClick={() => this.selectPlayer(name)} />
+    ));
+
+    const colorsOptions = colors.map(({ name, svg }) => (
+      <img src={svg} alt={`${name} color`} className={`circular ${this.state.color === name ? "selecionado" : ""}`} onClick={() => this.selectColor(name)} />
     ));
 
     return (
@@ -60,10 +67,7 @@ export default class AddCard extends Component {
           {playerPictures}
         </div>
         <div id="cores" className="espacado">
-          <img src={colors.blue} alt="Cor azul" className={`circular ${this.state.color === "blue" ? "selecionado" : ""}`} onClick={() => this.selectColor("blue")}></img>
-          <img src={colors.red} alt="Cor vermelha" className={`circular ${this.state.color === "red" ? "selecionado" : ""}`} onClick={() => this.selectColor("red")}></img>
-          <img src={colors.yellow} alt="Cor amarela" className={`circular ${this.state.color === "yellow" ? "selecionado" : ""}`} onClick={() => this.selectColor("yellow")}></img>
-          <img src={colors.green} alt="Cor verde" className={`circular ${this.state.color === "green" ? "selecionado" : ""}`} onClick={() => this.selectColor("green")}></img>
+          {colorsOptions}
         </div>
         <div id="selectCard">
           <img src={cartas.semCor.zero} alt="Zero" className={`carta ${this.state.card === "zero" ? "selecionado" : ""}`} onClick={() => this.selectCard("zero")}></img>
