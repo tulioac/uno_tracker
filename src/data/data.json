@@ -1,18 +1,22 @@
 [
   {
     "name": "Dumbo",
-    "wins": 31
+    "wins": 38
   },
   {
     "name": "Sara",
-    "wins": 25
+    "wins": 36
   },
   {
     "name": "André",
-    "wins": 19
+    "wins": 22
   },
   {
     "name": "Daniel",
-    "wins": 13
+    "wins": 21
+  },
+  {
+    "name": "Malu",
+    "wins": 4
   }
 ]
