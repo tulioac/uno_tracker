@@ -35,6 +35,6 @@ const malu = {
   "picture": fotos.malu
 }
 
-const players = [dumbo, sara, andré, daniel, malu];
+const players = [dumbo, sara, andré, daniel];
 
 export default players;

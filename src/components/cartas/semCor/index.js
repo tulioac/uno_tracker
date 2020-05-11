@@ -78,6 +78,22 @@ const skip = {
 }
 
 const semCor = [
+  one,
+  two,
+  three,
+  four,
+  five,
+  plus,
+  reverse,
+  skip
+]
+
+// TODO: Criar modo wild e normal
+
+export default semCor;
+
+/*
+const semCor = [
   zero,
   one,
   two,
@@ -92,5 +108,4 @@ const semCor = [
   reverse,
   skip
 ]
-
-export default semCor;
+*/
