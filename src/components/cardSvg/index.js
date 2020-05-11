@@ -1,29 +1,9 @@
 import React from 'react';
 
-import blue from '../cartas/azul';
-import yellow from '../cartas/amarela';
-import green from '../cartas/verde';
-import red from '../cartas/vermelha';
+import cartas from '../cartas';
 
 export const CardSvg = ({ cardType, color }) => {
-  let card;
-
-  switch (color) {
-    case "blue":
-      card = blue[cardType];
-      break;
-    case "yellow":
-      card = yellow[cardType];
-      break;
-    case "green":
-      card = green[cardType];
-      break;
-    case "red":
-      card = red[cardType];
-      break;
-    default:
-      break;
-  }
+  let card = cartas[color][cardType];
 
   return (
     <img src={card} className="carta" alt={`${cardType} ${color}`} />
