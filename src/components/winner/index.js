@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-import andre from '../../img/players/andre.jfif';
-import daniel from '../../img/players/daniel.jfif';
-import dumbo from '../../img/players/dumbo.jfif';
-import sara from '../../img/players/sara.jfif';
-import malu from '../../img/players/malu.jfif';
+import { andre, daniel, dumbo, sara, malu } from '../fotos';
 
 export default class Winner extends Component {
   render() {
