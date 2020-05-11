@@ -3,4 +3,6 @@ import red from '../../svg/colors/red.svg';
 import yellow from '../../svg/colors/yellow.svg';
 import green from '../../svg/colors/green.svg';
 
-export { blue, red, yellow, green };
+const colors = { blue, red, yellow, green };
+
+export default colors;

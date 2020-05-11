@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-import { blue, red, yellow, green } from '../colors';
+import colors from '../colors';
 
 import fotos from '../fotos';
 
@@ -60,10 +60,10 @@ export default class AddCard extends Component {
           {playerPictures}
         </div>
         <div id="cores" className="espacado">
-          <img src={blue} alt="Cor azul" className={`circular ${this.state.color === "blue" ? "selecionado" : ""}`} onClick={() => this.selectColor("blue")}></img>
-          <img src={red} alt="Cor vermelha" className={`circular ${this.state.color === "red" ? "selecionado" : ""}`} onClick={() => this.selectColor("red")}></img>
-          <img src={yellow} alt="Cor amarela" className={`circular ${this.state.color === "yellow" ? "selecionado" : ""}`} onClick={() => this.selectColor("yellow")}></img>
-          <img src={green} alt="Cor verde" className={`circular ${this.state.color === "green" ? "selecionado" : ""}`} onClick={() => this.selectColor("green")}></img>
+          <img src={colors.blue} alt="Cor azul" className={`circular ${this.state.color === "blue" ? "selecionado" : ""}`} onClick={() => this.selectColor("blue")}></img>
+          <img src={colors.red} alt="Cor vermelha" className={`circular ${this.state.color === "red" ? "selecionado" : ""}`} onClick={() => this.selectColor("red")}></img>
+          <img src={colors.yellow} alt="Cor amarela" className={`circular ${this.state.color === "yellow" ? "selecionado" : ""}`} onClick={() => this.selectColor("yellow")}></img>
+          <img src={colors.green} alt="Cor verde" className={`circular ${this.state.color === "green" ? "selecionado" : ""}`} onClick={() => this.selectColor("green")}></img>
         </div>
         <div id="selectCard">
           <img src={cartas.semCor.zero} alt="Zero" className={`carta ${this.state.card === "zero" ? "selecionado" : ""}`} onClick={() => this.selectCard("zero")}></img>
