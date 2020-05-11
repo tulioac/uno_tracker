@@ -3,7 +3,7 @@ import './styles.css';
 
 import { blue, red, yellow, green } from '../colors';
 
-import { andre, daniel, dumbo, sara, malu } from '../fotos';
+import fotos from '../fotos';
 
 import cartas from '../cartas';
 
@@ -50,11 +50,11 @@ export default class AddCard extends Component {
       <div className="card addCard">
         <h1>Adicionar carta ausente</h1>
         <div id="jogadores" className="espacado">
-          <img src={dumbo} alt="Dumbo" className={`circular ${this.state.player === "dumbo" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("dumbo")}></img>
-          <img src={sara} alt="Sara" className={`circular ${this.state.player === "sara" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("sara")}></img>
-          <img src={andre} alt="Andre" className={`circular ${this.state.player === "andre" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("andre")}></img>
-          <img src={daniel} alt="Daniel" className={`circular ${this.state.player === "daniel" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("daniel")}></img>
-          <img src={malu} alt="Malu" className={`circular ${this.state.player === "malu" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("malu")}></img>
+          <img src={fotos.dumbo} alt="Dumbo" className={`circular ${this.state.player === "dumbo" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("dumbo")}></img>
+          <img src={fotos.sara} alt="Sara" className={`circular ${this.state.player === "sara" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("sara")}></img>
+          <img src={fotos.andre} alt="Andre" className={`circular ${this.state.player === "andre" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("andre")}></img>
+          <img src={fotos.daniel} alt="Daniel" className={`circular ${this.state.player === "daniel" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("daniel")}></img>
+          <img src={fotos.malu} alt="Malu" className={`circular ${this.state.player === "malu" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("malu")}></img>
         </div>
         <div id="cores" className="espacado">
           <img src={blue} alt="Cor azul" className={`circular ${this.state.color === "blue" ? "selecionado" : ""}`} onClick={() => this.selectColor("blue")}></img>

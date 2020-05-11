@@ -4,4 +4,6 @@ import dumbo from '../../img/players/dumbo.jfif';
 import sara from '../../img/players/sara.jfif';
 import malu from '../../img/players/malu.jfif';
 
-export { andre, daniel, dumbo, sara, malu };
+const fotos = { andre, daniel, dumbo, sara, malu };
+
+export default fotos;
