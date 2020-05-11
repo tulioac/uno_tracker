@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-import fotos from '../fotos';
-
 export default class Winner extends Component {
   render() {
+    const playersPictures = this.props.players.jogadores.map(({ name, picture }) => (
+      <img key={name} src={picture} alt={name} className="circular playerPhoto" />
+    ));
+
     return (
       <div id="winner">
-        <img src={fotos.dumbo} alt="Jogador" className="circular playerPhoto"></img>
-        <img src={fotos.sara} alt="Jogador" className="circular playerPhoto"></img>
-        <img src={fotos.andré} alt="Jogador" className="circular playerPhoto"></img>
-        <img src={fotos.daniel} alt="Jogador" className="circular playerPhoto"></img>
-        <img src={fotos.malu} alt="Jogador" className="circular playerPhoto"></img>
+        {playersPictures}
       </div>
     );
   }

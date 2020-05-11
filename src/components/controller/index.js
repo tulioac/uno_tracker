@@ -6,36 +6,35 @@ import Winner from '../winner';
 import AddCard from '../addCard';
 import Stats from '../stats';
 
-import players from '../../data/data.json';
+import players from '../../data';
 
 export default class Controller extends Component {
-
-  // TODO: Receber informações do JSON
-
-  state = {
-    "andré": [],
-    "daniel": [],
-    "dumbo": [],
-    "sara": [],
-    "malu": [],
-  }
+  state = { jogadores: players };
 
   addCardToPlayer = (cardInfo) => {
     const { player, card, color } = cardInfo;
 
-    this.setState({
-      [player]: [{ card, color }, ...this.state[player]]
-    })
+    this.setState(prevState => ({
+      jogadores: prevState.jogadores.map(
+        (jogador) => jogador.name === player ? { ...jogador, cards: [{ card, color }, ...jogador.cards] } : jogador
+      )
+    }));
   }
 
   render() {
+    const teste = {
+      player: "dumbo",
+      card: "blue",
+      color: "zero",
+    }
+
     return (
       <div id="game">
-        <img src={Logosvg} id="logo" alt="Logo"></img>
-        <Winner />
+        <img src={Logosvg} id="logo" alt="Logo" onClick={() => this.addCardToPlayer(teste)}></img>
+        <Winner players={this.state} />
         <div className="cards">
-          <AddCard players={players} addCardToPlayer={this.addCardToPlayer.bind(this)} />
-          <Stats players={players} playersCards={this.state} />
+          <AddCard players={this.state} addCardToPlayer={this.addCardToPlayer.bind(this)} />
+          <Stats players={this.state} />
         </div>
       </div>
     );

@@ -3,10 +3,12 @@ import './styles.css';
 
 import PlayerStats from '../playerStats';
 
-import fotos from '../fotos';
-
 export default class Stats extends Component {
   render() {
+    const jogadores = this.props.players.jogadores.map(({ name, wins, cards, picture }) => (
+      <PlayerStats key={name} name={name} wins={wins} cards={cards} image={picture} />
+    ))
+
     return (
       <div className="card stats">
         <div className="title">
@@ -18,11 +20,7 @@ export default class Stats extends Component {
           </h1>
         </div>
         <div className="body">
-          <PlayerStats image={fotos.dumbo} name={"Dumbo"} wins={"38"} cards={this.props.playersCards.dumbo} />
-          <PlayerStats image={fotos.sara} name={"Sara"} wins={"36"} cards={this.props.playersCards.sara} />
-          <PlayerStats image={fotos.andré} name={"André"} wins={"22"} cards={this.props.playersCards.andré} />
-          <PlayerStats image={fotos.daniel} name={"Daniel"} wins={"21"} cards={this.props.playersCards.daniel} />
-          <PlayerStats image={fotos.malu} name={"Malu"} wins={"4"} cards={this.props.playersCards.malu} />
+          {jogadores}
         </div>
       </div>
     );
