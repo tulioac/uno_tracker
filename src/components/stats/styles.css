@@ -7,7 +7,7 @@
 .stats .title {
   padding: 30px 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 100px auto;
   justify-content: space-around;
   min-width: 100%;
 }

@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './styles.css';
 
 import colors from '../colors';
-
 import fotos from '../fotos';
-
 import cartas from '../cartas';
 
 export default class AddCard extends Component {
@@ -49,9 +47,6 @@ export default class AddCard extends Component {
   }
   // Trocar renderização das cartas para CardSvg
   render() {
-
-    console.log(this.props.players);
-
     const playerPictures = this.props.players.map(({ name }) => (
       <img key={name} src={fotos[name]} alt={name} className={`circular ${this.state.player === name ? "selecionado" : ""}`} onClick={() => this.selectPlayer(name)} />
     ));
