@@ -77,7 +77,7 @@ export default class AddCard extends Component {
           <img src={cartas.semCor.reverse} alt="Reverse" className={`carta ${this.state.card === "reverse" ? "selecionado" : ""}`} onClick={() => this.selectCard("reverse")}></img>
           <img src={cartas.semCor.skip} alt="Skip" className={`carta  vermelho ${this.state.card === "skip" ? "selecionado" : ""}`} onClick={() => this.selectCard("skip")}></img>
         </div>
-        <button className="preenchido" onClick={this.addCardToPlayer}>Adicionar</button>
+        <button className={`preenchido ${this.validateSelection() ? "valido" : ""}`} onClick={this.addCardToPlayer}>Adicionar</button>
       </div>
     );
   }

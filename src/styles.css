@@ -119,6 +119,10 @@ h5 {
   box-shadow: var(--hover);
 }
 
+.valido {
+  background-color: var(--primario-escuro);
+}
+
 .primario {
   color: var(--primario);
 }
@@ -136,22 +140,6 @@ h5 {
 .selecionado {
   filter: brightness(1.2);
   box-shadow: var(--selecionado);
-}
-
-.amarelo {
-  fill: var(--carta-amarela);
-}
-
-.azul {
-  fill: var(--carta-azul);
-}
-
-.verde {
-  fill: var(--carta-verde);
-}
-
-.vermelho {
-  fill: var(--carta-vermelha);
 }
 
 ::-webkit-scrollbar {
