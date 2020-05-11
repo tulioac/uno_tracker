@@ -9,8 +9,11 @@ import Stats from '../stats';
 import players from '../../data/data.json';
 
 export default class Controller extends Component {
+
+  // TODO: Receber informações do JSON
+
   state = {
-    "andre": [],
+    "andré": [],
     "daniel": [],
     "dumbo": [],
     "sara": [],
