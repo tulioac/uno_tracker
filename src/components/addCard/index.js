@@ -46,15 +46,18 @@ export default class AddCard extends Component {
   }
   // Trocar renderização das cartas para CardSvg
   render() {
+
+    console.log(this.props.players);
+
+    let playerPictures = this.props.players.map(({ name }) => (
+      <img key={name} src={fotos[name]} alt={name} className={`circular ${this.state.player === name ? "selecionado" : ""}`} onClick={() => this.selectPlayer(name)} />
+    ));
+
     return (
-      <div className="card addCard">
+      <div className="card addCard" >
         <h1>Adicionar carta ausente</h1>
         <div id="jogadores" className="espacado">
-          <img src={fotos.dumbo} alt="Dumbo" className={`circular ${this.state.player === "dumbo" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("dumbo")}></img>
-          <img src={fotos.sara} alt="Sara" className={`circular ${this.state.player === "sara" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("sara")}></img>
-          <img src={fotos.andre} alt="Andre" className={`circular ${this.state.player === "andre" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("andre")}></img>
-          <img src={fotos.daniel} alt="Daniel" className={`circular ${this.state.player === "daniel" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("daniel")}></img>
-          <img src={fotos.malu} alt="Malu" className={`circular ${this.state.player === "malu" ? "selecionado" : ""}`} onClick={() => this.selectPlayer("malu")}></img>
+          {playerPictures}
         </div>
         <div id="cores" className="espacado">
           <img src={blue} alt="Cor azul" className={`circular ${this.state.color === "blue" ? "selecionado" : ""}`} onClick={() => this.selectColor("blue")}></img>
