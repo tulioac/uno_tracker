@@ -1,7 +1,6 @@
 .stats {
-  width: minmax(700px, 100%);
-  width: 60%;
-  display: block;
+  min-width: 700px;
+  width: auto;
 }
 
 .stats .title {
