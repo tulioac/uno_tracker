@@ -56,7 +56,7 @@ export default class AddCard extends Component {
     ));
 
     const cardOptions = cartas.semCor.map(({ name, svg }) => (
-      <img key={`$name`} src={svg} alt={name} className={`carta ${this.state.card === name ? "selecionado" : ""}`} onClick={() => this.selectCard(name)} />
+      <img key={name} src={svg} alt={name} className={`carta ${this.state.card === name ? "selecionado" : ""}`} onClick={() => this.selectCard(name)} />
     ));
 
     return (
