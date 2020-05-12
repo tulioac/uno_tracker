@@ -42,6 +42,20 @@ const malu = {
   "picture": fotos.malu
 }
 
-const players = [dumbo, sara, túlio, andré, daniel];
+const cartaxo = {
+  "name": "Cartaxo",
+  "wins": 0,
+  "cards": [],
+  "picture": fotos.cartaxo
+}
+
+const henrique = {
+  "name": "Henrique",
+  "wins": 0,
+  "cards": [],
+  "picture": fotos.henrique
+}
+
+const players = [dumbo, sara, túlio, andré, daniel, cartaxo, henrique];
 
 export default players;
