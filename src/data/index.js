@@ -16,7 +16,7 @@ const sara = {
 
 const túlio = {
   "name": "Túlio",
-  "wins": 35,
+  "wins": 36,
   "cards": [],
   "picture": fotos.túlio
 }
