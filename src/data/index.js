@@ -9,7 +9,7 @@ const dumbo = {
 
 const sara = {
   "name": "Sara",
-  "wins": 36,
+  "wins": 37,
   "cards": [],
   "picture": fotos.sara
 }
@@ -56,6 +56,6 @@ const henrique = {
   "picture": fotos.henrique
 }
 
-const players = [dumbo, sara, túlio, andré, daniel, cartaxo, henrique];
+const players = [dumbo, sara, túlio, andré, daniel, henrique, cartaxo];
 
 export default players;
