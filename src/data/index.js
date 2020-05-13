@@ -51,7 +51,7 @@ const cartaxo = {
 
 const henrique = {
   "name": "Henrique",
-  "wins": 1,
+  "wins": 2,
   "cards": [],
   "picture": fotos.henrique
 }
