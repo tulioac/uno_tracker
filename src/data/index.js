@@ -2,7 +2,7 @@ import fotos from '../components/fotos';
 
 const dumbo = {
   "name": "Dumbo",
-  "wins": 38,
+  "wins": 39,
   "cards": [],
   "picture": fotos.dumbo
 }
@@ -16,7 +16,7 @@ const sara = {
 
 const túlio = {
   "name": "Túlio",
-  "wins": 34,
+  "wins": 35,
   "cards": [],
   "picture": fotos.túlio
 }
