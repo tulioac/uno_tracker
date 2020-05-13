@@ -62,13 +62,13 @@ export default class AddCard extends Component {
     return (
       <div className="card addCard" >
         <h1>Adicionar carta ausente</h1>
-        <div id="jogadores" className="espacado">
+        <div id="jogadores" className="espacado grupos">
           {playerPictures}
         </div>
         <div id="cores" className="espacado">
           {colorsOptions}
         </div>
-        <div id="selectCard">
+        <div id="selectCard" className="grupos">
           {cardOptions}
         </div>
         <button className={`preenchido ${this.validateSelection() ? "valido" : ""}`} onClick={this.addCardToPlayer}>Adicionar</button>

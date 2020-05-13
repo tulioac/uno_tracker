@@ -1,5 +1,5 @@
 .addCard {
-  width: 600px;
+  width: auto;
   height: 600px;
   padding: 30px 20px;
 }
@@ -19,21 +19,25 @@
 }
 
 .addCard #jogadores {
-  width: 90%;
-  cursor: pointer;
+  max-width: 350px;
 }
 
 .addCard #jogadores img {
   width: 60px;
   height: 60px;
+  margin: 0px 5px;
+  cursor: pointer;
 }
 
 .addCard #selectCard {
-   display: flex;
-   width: 65%;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: space-evenly;
+   max-width: 250px;
+}
+
+.addCard .grupos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .circular {
