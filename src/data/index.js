@@ -1,61 +1,24 @@
 import fotos from '../components/fotos';
 
-const dumbo = {
-  "name": "Dumbo",
-  "wins": 39,
-  "cards": [],
-  "picture": fotos.dumbo
+function createPlayer(name, wins, picture) {
+  return {
+    name,
+    wins,
+    cards: [],
+    picture
+  }
 }
 
-const sara = {
-  "name": "Sara",
-  "wins": 37,
-  "cards": [],
-  "picture": fotos.sara
-}
+const dumbo = createPlayer("Dumbo", 39, fotos.dumbo);
+const sara = createPlayer("Sara", 37, fotos.sara);
+const tulio = createPlayer("Túlio", 36, fotos.tulio);
+const andre = createPlayer("André", 22, fotos.andre);
+const daniel = createPlayer("Daniel", 21, fotos.daniel);
+const malu = createPlayer("Malu", 4, fotos.malu);
+const henrique = createPlayer("Henrique", 2, fotos.henrique);
+const cartaxo = createPlayer("Cartaxo", 0, fotos.cartaxo);
 
-const túlio = {
-  "name": "Túlio",
-  "wins": 36,
-  "cards": [],
-  "picture": fotos.túlio
-}
 
-const andré = {
-  "name": "André",
-  "wins": 22,
-  "cards": [],
-  "picture": fotos.andré
-}
-
-const daniel = {
-  "name": "Daniel",
-  "wins": 21,
-  "cards": [],
-  "picture": fotos.daniel
-}
-
-const malu = {
-  "name": "Malu",
-  "wins": 4,
-  "cards": [],
-  "picture": fotos.malu
-}
-
-const henrique = {
-  "name": "Henrique",
-  "wins": 2,
-  "cards": [],
-  "picture": fotos.henrique
-}
-
-const cartaxo = {
-  "name": "Cartaxo",
-  "wins": 0,
-  "cards": [],
-  "picture": fotos.cartaxo
-}
-
-const players = [dumbo, sara, túlio, andré, daniel, malu, henrique, cartaxo];
+const players = [dumbo, sara, tulio, andre, daniel, malu, henrique, cartaxo];
 
 export default players;
